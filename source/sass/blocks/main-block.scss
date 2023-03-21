@@ -8,7 +8,6 @@
   padding-top: 150px;
   padding-bottom: 190px;
   margin-top: -75px;
-  flex-wrap: wrap;
 }
 
 .main-block__title {
@@ -137,7 +136,7 @@
   }
 
   .main-block__image {
-    min-height: 980px;
+    height: 980px;
   }
 
   .main-block__text.container {
