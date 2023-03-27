@@ -60,7 +60,8 @@
 
     width: 500px;
     padding: 40px;
-
+    top: -17px;
+    left: -8px;
     background-color: $color-deep-sky-blue;
     border-radius: 3px;
 
@@ -72,8 +73,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 17px;
-    right: 17px;
+    top: 16px;
+    right: 15px;
     z-index: 1;
     width: 40px;
     height: 40px;
@@ -142,7 +143,6 @@
   line-height: 42px;
   color: $color-default-white;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .modal__descriprion {
@@ -170,7 +170,7 @@
 
 [data-validate-type="checkbox"] {
   padding-bottom: 0;
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 .modal__input {
@@ -180,6 +180,15 @@
   border-radius: 3px;
   width: 420px;
   padding: 15px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    background-color: $color-black-pearl;
+  }
 }
 
 .modal__control.is-invalid {
@@ -200,6 +209,7 @@
 .modal__input--question {
   min-height: 155px;
   margin-bottom: 20px;
+  padding-top: 25px;
 }
 
 .modal__submit-button {
@@ -217,8 +227,18 @@
   border: none;
   outline: none;
   padding: 15px 60px;
-  margin-top: 5px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: $color-black-pearl;
+    background: $color-default-white;
+    opacity: 1;
+  }
 }
 
 .modal__input-text {
@@ -239,7 +259,7 @@
   height: 14px;
   border: 1px solid $color-default-white;
   border-radius: 2px;
-  left: 40px;
+  left: 50px;
   bottom: 45px;
 }
 
@@ -249,6 +269,6 @@
   width: 7px;
   height: 5px;
   background-image: url("/img/mark.svg");
-  left: 44px;
+  left: 53px;
   bottom: 50px;
 }

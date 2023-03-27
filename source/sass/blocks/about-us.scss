@@ -120,6 +120,12 @@
   }
 }
 
+@media (max-width: 1112px) {
+  .about-us__text {
+    max-height: 260px;
+  }
+}
+
 @media (min-width: $vp-1024) {
   .about-us__wrapper {
     display: grid;

@@ -13,7 +13,6 @@
 
 .website__title {
   margin: 0;
-  margin-top: 25px;
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 400;
@@ -21,6 +20,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   color: $color-default-white;
+  padding: 15px 100px 14px;
   padding-left: 25px;
   text-transform: uppercase;
 
@@ -34,7 +34,7 @@
     background-position: center;
     background-size: 50% 2px, 2px 50%;
     background-repeat: no-repeat;
-    top: 30px;
+    top: 21px;
     right: 21px;
   }
 
@@ -109,7 +109,7 @@
     gap: 6px 30px;
     margin: 0;
     padding: 0;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 220px 150px;
   }
 
   .website__title {

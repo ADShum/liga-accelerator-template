@@ -1,8 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {smoothScroll} from './utils/scrol';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/accordion/init-accordion';
 import {initSpoiler} from './modules/accordion/btn-change';
+
 
 // ---------------------------------
 
@@ -12,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  smoothScroll();
   initSpoiler();
 
   // Modules

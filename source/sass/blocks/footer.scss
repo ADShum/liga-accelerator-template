@@ -21,13 +21,11 @@
   position: relative;
   border-top: 1px solid #f8fdffb3;
   border-bottom: 1px solid #f8fdffb3;
-  padding-bottom: 20px;
 }
 
 .footer__navigation-contacts {
   position: relative;
   border-bottom: 1px solid #f8fdffb3;
-  padding-bottom: 20px;
 }
 
 .footer__navigation-wrapper {
@@ -93,10 +91,12 @@
 
   .footer__wrapper {
     padding-top: 50px;
-    column-gap: 150px;
-    padding-left: 38px;
+    padding-left: 8px;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 25px;
   }
 
   .footer__social {
@@ -110,8 +110,7 @@
     margin: 0;
     display: flex;
     column-gap: 43px;
-    margin-right: auto;
-    padding-right: 50px;
+    margin-left: auto;
   }
 
   .footer__image-desktop {
