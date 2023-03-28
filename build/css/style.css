@@ -646,6 +646,10 @@ button,
   display: inline-flex;
   padding: 10px 20px;
   color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #2c39f2;
   border: none;
   cursor: pointer;
@@ -976,7 +980,7 @@ button,
   position: absolute;
   width: 7px;
   height: 5px;
-  background-image: url("/img/mark.svg");
+  background-image: url("../img/mark.svg");
   left: 53px;
   bottom: 50px;
 }
@@ -2045,7 +2049,7 @@ button,
   position: absolute;
   width: 7px;
   height: 5px;
-  background-image: url("/img/mark.svg");
+  background-image: url("../img/mark.svg");
   top: 12px;
   left: 7px;
 }
@@ -2795,8 +2799,9 @@ button,
   }
 
   .header__link {
-    padding-top: 29px;
-    padding-bottom: 35px;
+    margin-top: 29px;
+    margin-bottom: 35px;
+    padding: 0;
   }
 
   .header__image-desktop:hover,
