@@ -1817,6 +1817,7 @@ button,
 
 .catalog__link {
   position: relative;
+  display: block;
 }
 
 .catalog__link::before {
