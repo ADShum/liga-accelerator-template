@@ -125,6 +125,10 @@
   left: 7px;
 }
 
+.feedback__form__checkbox-input-icon {
+  cursor: pointer;
+}
+
 @media (min-width: $vp-768) {
   .feedback__form {
     display: grid;
@@ -295,10 +299,11 @@
 
   .feedback__form-agreement {
     margin-left: 43px;
-  }
 
-  .feedback__form__checkbox-input-text {
-    margin-top: 15px;
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
   }
 
   .feedback__form__checkbox-input-icon {
@@ -314,5 +319,13 @@
   .feedback__form-input--checkbox[type="checkbox"]:checked + .feedback__form__checkbox-input-icon::before {
     top: 27px;
     left: 5px;
+  }
+
+  .feedback__form .is-invalid input[type="checkbox"] + .feedback__form__checkbox-input-icon::after {
+    background-color: #ff0000;
+  }
+
+  [data-message-base="Поле обязательно к заполнению"] .is-invalid {
+    color: #ff0000;
   }
 }

@@ -81,6 +81,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 240px;
+    grid-column: 1;
   }
 
   .footer__link {
@@ -92,11 +93,13 @@
   .footer__wrapper {
     padding-top: 50px;
     padding-left: 8px;
-    display: flex;
+    display: grid;
     flex-direction: row;
     width: 100%;
     max-width: 1300px;
     padding-right: 25px;
+    grid-template-columns: 1fr 69.26%;
+    gap: 30px;
   }
 
   .footer__social {
@@ -110,7 +113,6 @@
     margin: 0;
     display: flex;
     column-gap: 43px;
-    margin-left: auto;
   }
 
   .footer__image-desktop {

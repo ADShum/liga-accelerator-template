@@ -109,7 +109,7 @@
     gap: 6px 30px;
     margin: 0;
     padding: 0;
-    grid-template-columns: 220px 150px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .website__title {
@@ -122,7 +122,6 @@
   .website__item {
     margin: 0;
     padding: 0;
-    width: 220px;
     padding-left: 10px;
   }
 
