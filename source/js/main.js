@@ -3,7 +3,26 @@ import {smoothScroll} from './utils/scrol';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/accordion/init-accordion';
-import {initSpoiler} from './modules/accordion/btn-change';
+
+const moreButton = document.querySelector('.about-us__btn');
+const moreText = document.querySelector('.about-us__spoiler');
+
+if (moreText) {
+  const openSpoiler = () => {
+    if (!moreText.classList.contains('about-us__spoiler--show')) {
+      moreButton.textContent = 'Свернуть';
+      moreText.classList.add('about-us__spoiler--show');
+    } else {
+      moreButton.textContent = 'Подробнее';
+      moreText.classList.remove('about-us__spoiler--show');
+    }
+  };
+
+  moreButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    openSpoiler();
+  });
+}
 
 
 // ---------------------------------
@@ -15,7 +34,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   smoothScroll();
-  initSpoiler();
 
   // Modules
   // ---------------------------------

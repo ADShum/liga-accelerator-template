@@ -22,33 +22,20 @@
 }
 
 .about-us__text {
-  max-height: 170px;
   overflow: hidden;
-  will-change: max-height;
-  transition: max-height $trans-default;
-
-  & br {
-    display: none;
-  }
-
-  @include vp-1023 {
-    max-height: 320px;
-  }
 
   @include vp-767 {
-    max-height: 270px;
     font-size: 14px;
     line-height: 19px;
-
-    & br {
-      display: block;
-    }
   }
 }
 
-.about-us__text.is-shown {
-  max-height: 1000px;
-  transition: max-height $trans-spoiler;
+.about-us__spoiler {
+  display: none;
+}
+
+.about-us__spoiler--show {
+  display: block;
 }
 
 .about-us p {
@@ -83,6 +70,12 @@
 
 .about-us__image {
   display: none;
+}
+
+.about-us__text-part {
+  @include vp-767 {
+    display: none;
+  }
 }
 
 @media (min-width: $vp-768) {
@@ -120,12 +113,6 @@
   }
 }
 
-@media (max-width: 1112px) {
-  .about-us__text {
-    max-height: 260px;
-  }
-}
-
 @media (min-width: $vp-1024) {
   .about-us__wrapper {
     display: grid;
@@ -153,9 +140,5 @@
 
   .about-us__title {
     margin-bottom: 17px;
-  }
-
-  .about-us__text {
-    max-height: 210px;
   }
 }

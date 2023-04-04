@@ -38,6 +38,7 @@
   }
 }
 
+
 @media (min-width: $vp-1024) {
   .header {
     position: fixed;
@@ -75,5 +76,11 @@
     margin-right: 61px;
     margin-bottom: 7px;
     width: 160px;
+  }
+}
+
+@media (max-width: 1028px) {
+  .header__btn {
+    margin-right: 0;
   }
 }
