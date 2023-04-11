@@ -276,3 +276,12 @@
 .modal__form .is-invalid input[type="checkbox"] + .modal__input-icon::after {
   background-color: #ff0000;
 }
+
+.modal__agreement {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}

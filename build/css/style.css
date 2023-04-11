@@ -991,6 +991,15 @@ button,
   background-color: #ff0000;
 }
 
+.modal__agreement {
+  cursor: pointer;
+}
+
+.modal__agreement:hover,
+.modal__agreement:focus {
+  opacity: 0.6;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -2828,13 +2837,13 @@ button,
     text-transform: uppercase;
     padding: 10px 15px;
     margin-right: 61px;
-    margin-bottom: 7px;
+    margin-top: 7px;
     width: 160px;
+    margin-bottom: 10px;
   }
 
   .navigation {
     margin-left: 19px;
-    margin-top: 5px;
     width: 490px;
     row-gap: 7px;
   }
@@ -2852,6 +2861,10 @@ button,
 
   .navigation__link:active {
     color: #00b3ff;
+  }
+
+  .navigation__item {
+    padding-top: 10px;
   }
 
   .navigation__item:last-child {
@@ -3090,6 +3103,7 @@ button,
 
   .feedback__form-agreement {
     margin-left: 43px;
+    cursor: pointer;
   }
 
   .feedback__form-agreement:hover,

@@ -43,7 +43,6 @@
 @media (min-width: $vp-1024) {
   .navigation {
     margin-left: 19px;
-    margin-top: 5px;
     width: 490px;
     row-gap: 7px;
   }
@@ -62,6 +61,8 @@
   }
 
   .navigation__item {
+    padding-top: 10px;
+
     &:last-child {
       padding-right: 0;
     }
